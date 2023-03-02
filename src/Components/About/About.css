@@ -3,8 +3,8 @@
 }
 .about-me-container > h1 {
      font-family: Mynerve;
-     /* padding-left: 20px; */
-     font-size: 2.5vw;
+
+     font-size: 3vw;
      margin-bottom: 20px;
 }
 .about-me-container > div {
@@ -12,12 +12,11 @@
 }
 .about-me-container > div > p {
      font-family: Mynerve;
-     /* padding-left: 20px; */
+
      width: 80%;
      color: rgb(101, 255, 101);
      letter-spacing: 1.5px;
-
-     font-size: 2.6vw;
+     font-size: 2vw;
 }
 .about-me-container > div > p > span {
      color: #fff;
@@ -33,12 +32,12 @@
           padding: 20px;
      }
      .about-me-container > h1 {
-          font-size: 2vw;
+          font-size: 2em;
      }
      .about-me-container > div > p {
           font-family: Mynerve;
           width: 80%;
           color: rgb(101, 255, 101);
-          font-size:  1.95vw;
+          font-size: 15px;
      }
 }
