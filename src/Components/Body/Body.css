@@ -23,7 +23,7 @@ h1{
      inline-size: 60%;
      padding: 20px;
      letter-spacing: 3.5px;
-     font-size: 2.5em;
+     font-size: 2.5vw;
      overflow: hidden;
 }
 .body-intro > span {
@@ -34,6 +34,6 @@ h1{
 @media screen and (max-width: 540px) {
      .body-intro {
           inline-size: 85%;
-          font-size: 25px;
+          font-size:  3.25vw;
      }
 }

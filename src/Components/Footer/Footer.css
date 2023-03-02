@@ -24,14 +24,14 @@
      padding-left: 15px;
      padding-right: 15px;
      color: white;
-     font-size: 30px;
+     font-size: 2vw;
      cursor: pointer;
 }
 
 @media screen and (max-width: 540px) {
      .body-intro {
           inline-size: 75%;
-          font-size: 25px;
+          font-size: 20px;
      }
      .footer-container > div > a > i {
           padding-left: 10px;
