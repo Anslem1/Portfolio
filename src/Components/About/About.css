@@ -1,0 +1,44 @@
+.about-me-container {
+     padding: 40px;
+}
+.about-me-container > h1 {
+     font-family: Mynerve;
+     /* padding-left: 20px; */
+     font-size: 2.5em;
+     margin-bottom: 20px;
+}
+.about-me-container > div {
+     overflow: hidden;
+}
+.about-me-container > div > p {
+     font-family: Mynerve;
+     /* padding-left: 20px; */
+     width: 80%;
+     color: rgb(101, 255, 101);
+     letter-spacing: 1.5px;
+
+     font-size: 20px;
+}
+.about-me-container > div > p > span {
+     color: #fff;
+}
+
+.see-me-container {
+     display: flex;
+     flex-direction: column;
+}
+
+@media screen and (max-width: 540px) {
+     .about-me-container {
+          padding: 20px;
+     }
+     .about-me-container > h1 {
+          font-size: 2em;
+     }
+     .about-me-container > div > p {
+          font-family: Mynerve;
+          width: 80%;
+          color: rgb(101, 255, 101);
+          font-size: 15px;
+     }
+}

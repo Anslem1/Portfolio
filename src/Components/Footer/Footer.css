@@ -1,0 +1,43 @@
+.footer-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     right: 0;
+     position: fixed;
+     height: 70%;
+     z-index: 1;
+     overflow: hidden;
+     background-color: #000;
+}
+.footer-container > div {
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     border-left: 1px solid #65ff65;
+     height: 100%;
+
+     /* margin: 20px; */
+}
+.footer-container > div > a > i {
+     padding-left: 15px;
+     padding-right: 15px;
+     color: white;
+     font-size: 30px;
+     cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+     .body-intro {
+          inline-size: 75%;
+          font-size: 25px;
+     }
+     .footer-container > div > a > i {
+          padding-left: 10px;
+          padding-right: 10px;
+          color: white;
+          font-size: 25px;
+          cursor: pointer;
+     }
+}

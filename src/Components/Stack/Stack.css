@@ -1,0 +1,85 @@
+.stack-container {
+     /* height: 10000vh; */
+     overflow: hidden;
+}
+.stack-container > div {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     padding: 20px;
+     width: 90%;
+     justify-content: center;
+     align-items: center;
+}
+.stack-container > h1 {
+     text-align: start;
+     color: #fff;
+     padding-left: 20px;
+     font-size: 4em;
+     font-family: Bebas neue;
+     color: #fff;
+     letter-spacing: 2px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+}
+.stack-container > h1 > span {
+     color: rgb(101, 255, 101);
+}
+.stack-content {
+     overflow: hidden;
+     transition: all 0.3s ease;
+}
+.stack-content:hover {
+     cursor: pointer;
+     transform: translateY(-10px);
+}
+
+.stack-content > div {
+     width: 150px;
+     height: 150px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #fff;
+     padding: 10px;
+     border-radius: 20px;
+     gap: 10px;
+     overflow: hidden;
+}
+.stack-content > div > img {
+     width: 100px;
+     height: 100px;
+     object-fit: contain;
+}
+.stack-content > div > p {
+     color: #000;
+     font-family: mynerve;
+     font-weight: 500;
+     font-size: 20px;
+     letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 540px) {
+     .stack-container {
+          overflow: hidden;
+     }
+     .stack-container > div {
+          padding: 0;
+     }
+     .stack-container > h1 {
+          font-size: 3em;
+     }
+
+     .stack-content > div {
+          width: 100px;
+          height: 100px;
+     }
+     .stack-content > div > img {
+          width: 60px;
+          height: 60px;
+     }
+     .stack-content > div > p {
+          font-size: 18px;
+     }
+}
