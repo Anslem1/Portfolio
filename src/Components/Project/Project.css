@@ -93,7 +93,11 @@
           align-items: start;
           gap: 20px;
      }
+.project-txt {
+     font-size: 25px;
+     font-family: Bebas neue;
 
+}
 
     
      .project-content > div > img {

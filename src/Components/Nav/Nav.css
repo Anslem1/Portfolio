@@ -76,7 +76,7 @@
      }
      .overlay-div {
           position: absolute;
-          width: 45%;
+          width: 50%;
           background-color: rgb(101, 255, 101);
           border-radius: 5px;
           right: 0;
@@ -96,7 +96,7 @@
                width: 0%;
           }
           45% {
-               width: 50%;
+               width: 60%;
           }
      }
 
