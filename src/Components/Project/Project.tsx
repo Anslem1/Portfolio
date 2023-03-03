@@ -6,6 +6,7 @@ import { HTMLMotionProps, motion as m } from "framer-motion";
 import "./Project.css";
 import { item } from "../Stack/animation";
 import { Link } from "react-router-dom";
+import RenderLoading from "../LoadingPage/RenderLoading";
 
 
 function Project() {
@@ -41,6 +42,7 @@ function Project() {
                     text="Somethings I've worked on?"
                     setOverFlow={setOverFlow}
                />
+               <RenderLoading />
                <h1 className="project-txt">Projects:</h1>
                <m.div exit={{ opacity: 1 }}>
                     {!overFlow && projects && (

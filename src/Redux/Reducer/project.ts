@@ -37,26 +37,6 @@ export default (
                     loading: false,
                };
                break;
-          case projectConstants.GET_PROJECT_DETAILS_BY_ID_REQUEST:
-               state = {
-                    ...state,
-                    loading: true,
-               };
-               break;
-          case projectConstants.GET_PROJECT_DETAILS_BY_ID_SUCCESS:
-               state = {
-                    ...state,
-                    project: action.payload.project,
-                    loading: false,
-               };
-               break;
-          case projectConstants.GET_PROJECT_DETAILS_BY_ID_FAILURE:
-               state = {
-                    ...state,
-                    error: action.payload.error,
-                    loading: false,
-               };
-               break;
      }
 
      return state;
