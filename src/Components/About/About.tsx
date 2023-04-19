@@ -34,13 +34,9 @@ function About() {
                               Hello visitor! I'm Chidiebube, a MERN{" "}
                               <span>(Mongo, Express, React, NodeJs) </span> and{" "}
                               <span>TypeScript</span> stack developer who
-                              started learning to code in December 2022. Yes,
-                              you read that right, I'm a time traveler! I went
-                              back in time to learn the latest technologies and
-                              bring them back to the present. As a developer
-                              with no work experience, I'm like a baby deer
-                              trying to learn how to walk. But don't worry, I'm
-                              not afraid of falling <span>(or failing) </span> !
+                              started learning to code during june of 2022 where I finished a Udemy course by Colt Steele and kicked off my career as a web developer. As an entry level developer I am like a baby deer
+                              trying to learn how to walk because I am very fresh into the industry. But don't worry, I'm
+                              not afraid of falling <span>(or failing)</span>!
                               I'm determined to become a coding wizard and make
                               magic happen with my keyboard{" "}
                               <span>(cringe much?)</span>. When I'm not coding,

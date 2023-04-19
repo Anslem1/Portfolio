@@ -3,7 +3,7 @@ import Overlay from '../Overlay/Overlay';
 import './Singleproject.css'
 
 function Singleproject({ }) {
-  const projectObject = localStorage.getItem('projectObject');
+  const projectObject = localStorage.getItem('prjectObject');
   const [overFlow, setOverFlow] = useState(true);
   const singleProject = projectObject ? JSON.parse(projectObject) : null;
   const imgNum = Math.floor(Math.random() * singleProject.projectImages.length);
