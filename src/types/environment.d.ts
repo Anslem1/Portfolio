@@ -3,11 +3,18 @@ export {};
 declare global {
      namespace NodeJS {
           interface ProcessEnv {
-               REACT_APP_THEFLOW_EMAIL?: string;
-               REACT_APP_THEFLOW_PASSWORD?: string;
+               REACT_APP_THEFLOW_EMAIL: string;
+               REACT_APP_THEFLOW_PASSWORD: string;
           }
      }
 }
+
+declare const process: {
+     env: {
+          REACT_APP_THEFLOW_EMAIL: string;
+          REACT_APP_THEFLOW_PASSWORD: string;
+     };
+};
 
 export {};
 

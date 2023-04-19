@@ -24,7 +24,7 @@ function App() {
 
      const user = {
           email: process.env.REACT_APP_THEFLOW_EMAIL,
-          password: process.env.REACT_APP_THEFLOW_PASSWORD,
+          password: process.env.REACT_APP_THEFLOW_PASSWORD
      };
      useEffect(() => {
           dispatch(SigninUser(user) as unknown as AnyAction);
