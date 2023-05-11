@@ -22,6 +22,7 @@ function App() {
 
 
 
+     // eslint-disable-next-line react-hooks/exhaustive-deps
      const user = {
           email: process.env.REACT_APP_THEFLOW_EMAIL,
           password: process.env.REACT_APP_THEFLOW_PASSWORD
@@ -29,7 +30,7 @@ function App() {
      useEffect(() => {
           dispatch(SigninUser(user) as unknown as AnyAction);
           dispatch(getProjects() as unknown as AnyAction);
-     }, []);
+     }, [dispatch, user]);
      const locate = useLocation();
 
      return (
