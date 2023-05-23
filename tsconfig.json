@@ -17,6 +17,5 @@
           "jsx": "react-jsx",
           "typeRoots": ["./node_modules/@types", "./src/types/environment.d.ts"]
      },
-
-     "include": ["src", "src/Redux"]
+     "include": ["src"]
 }

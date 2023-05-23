@@ -5,11 +5,11 @@ import "./About.css";
 
 function About() {
      const [overFlow, setOverFlow] = useState(true);
-     const [showJpg, setShowJpg] = useState(false);
+
      return (
           <>
                <Overlay
-                    text="Curious? lol, Alright..."
+                    text="My developer journey!"
                     setOverFlow={setOverFlow}
                />
                <m.div

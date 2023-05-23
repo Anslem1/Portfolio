@@ -55,6 +55,11 @@ export default [
     axis: 'x'
   },
   {
+    tech: 'Postgres',
+    image: process.env.PUBLIC_URL + '/stackimages/postgres.svg.png',
+    axis: 'y'
+  },
+  {
     tech: 'NodeJs',
     image: process.env.PUBLIC_URL + '/stackimages/2560px-Node.js_logo.svg.png',
     axis: 'y'

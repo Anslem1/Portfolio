@@ -9,7 +9,8 @@ function RenderLoading() {
 
     project.loading
 
-    && <LoadingPage />
+    &&
+    <LoadingPage />
   )
 }
 
