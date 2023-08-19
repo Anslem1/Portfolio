@@ -5,6 +5,13 @@ import Overlay from "../Overlay/Overlay";
 import { container, item } from "./animation";
 import "./Stack.css";
 
+
+interface StackProp {
+     tech: string;
+     image: string;
+     axis: string;
+}
+
 function Stack() {
      type Props = HTMLMotionProps<"div">;
      const [overFlow, setOverFlow] = useState(true);
@@ -23,7 +30,7 @@ function Stack() {
                               initial={"hidden"}
                               animate="show"
                          >
-                              {TechStack.map((stack) => {
+                              {TechStack.map((stack: StackProp) => {
                                    return (
                                         <>
                                              <div className="stack-content" key={stack.tech}>

@@ -2,13 +2,18 @@ import { projectConstants } from "../constant";
 import axios from "../Helpers/axios";
 
 export function getProjects() {
-     return async (dispatch: Function) => {
+     return async (
+          dispatch: (arg0: {
+               type: string;
+               payload?: { projects: unknown[] } | { error: unknown[] };
+          }) => void
+     ) => {
           try {
                dispatch({ type: projectConstants.GET_PROJECTS_REQUEST });
                const res = await axios.get("/project/get");
                if (res.status === 200) {
                     const { projects } = res.data;
-               
+
                     dispatch({
                          type: projectConstants.GET_PROJECTS_SUCCESS,
                          payload: { projects },
@@ -27,5 +32,3 @@ export function getProjects() {
           }
      };
 }
-
-
