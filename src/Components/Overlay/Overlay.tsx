@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./Overlay.css";
 type TextProps = {
      text: string;
-     setOverFlow: Function;
+     setOverFlow: any;
 };
 
 function Overlay(props: TextProps) {
@@ -20,7 +20,6 @@ function Overlay(props: TextProps) {
           };
      }, []);
 
- 
      return (
           <>
                {showOverlay && (
