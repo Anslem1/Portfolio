@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { HTMLMotionProps, AnimatePresence, motion as m } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { AnyAction } from "redux";
 import "./App.css";
 import RenderNav from "./Components/Nav/RenderNav";
@@ -14,19 +14,15 @@ import Project from "./Components/Project/Project";
 import About from "./Components/About/About";
 import Singleproject from "./Components/SingleProject/Singleproject";
 
-type Props = HTMLMotionProps<"div">;
-
 function App() {
      const dispatch = useDispatch();
-
-
-
 
      // eslint-disable-next-line react-hooks/exhaustive-deps
      const user = {
           email: process.env.REACT_APP_THEFLOW_EMAIL,
-          password: process.env.REACT_APP_THEFLOW_PASSWORD
+          password: process.env.REACT_APP_THEFLOW_PASSWORD,
      };
+
      useEffect(() => {
           dispatch(SigninUser(user) as unknown as AnyAction);
           dispatch(getProjects() as unknown as AnyAction);
@@ -57,7 +53,9 @@ function App() {
                               />
                               <Route
                                    path="/project/:name"
-                                   element={<Singleproject key={locate.pathname} />}
+                                   element={
+                                        <Singleproject key={locate.pathname} />
+                                   }
                               />
                               <Route
                                    path="/about.who"

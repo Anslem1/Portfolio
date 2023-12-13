@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Body.css";
 import { motion as m } from "framer-motion";
 import Overlay from "../Overlay/Overlay";

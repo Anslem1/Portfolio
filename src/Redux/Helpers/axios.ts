@@ -1,6 +1,5 @@
 import axios from "axios";
 import { API } from "./urlConfig";
-import { authConstants } from "../constant";
 import store from "../store";
 
 const token = localStorage.getItem("token");

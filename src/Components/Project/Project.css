@@ -36,7 +36,7 @@
      color: rgb(101, 255, 101);
      font-family: mynerve;
      letter-spacing: 1.5px;
-     font-size: 4vw;
+     font-size: 3.7vw;
      z-index: 99;
 }
 .project-content > div > p {
@@ -64,7 +64,7 @@
      animation-duration: 0.2s;
      animation-timing-function: linear;
      transform: rotate(-10deg);
-     z-index: 0;
+     z-index: -1;
 }
 
 @keyframes imgOpa {
